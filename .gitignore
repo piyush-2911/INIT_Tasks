@@ -2,4 +2,4 @@ venv/
 Task2/__pycache__/
 Task2/Country-data.csv
 Task2/data-dictionary.csv
-Task2/heart.csvgit add .
+Task2/heart.csv
