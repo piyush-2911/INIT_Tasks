@@ -10,11 +10,12 @@ This task implements and compares Artificial Neural Networks (ANN) and Convoluti
 
 The model uses cross-entropy loss as the values are normalized to 0-1, this loss function will punish the more confidently wrong predictions more severely in this range.
 
-$$L(\mathbf{\hat{y}}, \mathbf{y}) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ij} \log(\hat{y}_{ij})$$
+$$L = -\sum_{i=1}^{C} y_i \log(\hat{y}_i)$$
 
-Where $N$ = batch size, $C$ = number of classes, $y_{ij}$ = ground truth (one-hot), $\hat{y}_{ij}$ = predicted probability
+Where $C$ = number of classes, $y_i$ = ground truth (one-hot), $\hat{y}_i$ = predicted probability
 
-Softmax: $\hat{y}_{ij} = \frac{e^{z_{ij}}}{\sum_{k=1}^{C} e^{z_{ik}}}$
+**Softmax:**
+$$\hat{y}_i = \frac{e^{z_i}}{\sum_{j=1}^{C} e^{z_j}}$$
 
 ## 2. Gradient Descent Update Rule
 
