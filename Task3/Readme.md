@@ -15,7 +15,10 @@ $$L = -\sum_{i=1}^{C} y_i \log(\hat{y}_i)$$
 Where $C$ = number of classes, $y_i$ = ground truth (one-hot), $\hat{y}_i$ = predicted probability
 
 **Softmax:**
-$$\hat{y}_i = \frac{e^{z_i}}{\sum_{j=1}^{C} e^{z_j}}$$
+
+$$
+\hat{y}_i = \frac{e^{z_i}}{\sum_{j=1}^{C} e^{z_j}}
+$$
 
 ## 2. Gradient Descent Update Rule
 
